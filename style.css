@@ -1,0 +1,296 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0; 
+    padding: 0;
+    background-color: #f7f7f7;
+}
+.parrafos{
+ font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify; 
+font-size: 20px;
+}
+
+.fotico{
+    margin-left: 30px;
+}
+/* Configuracion de titulos, ubicacion de texto, tamaño y color */
+.titulosprincipales
+{
+    text-align: center;
+    font-size: 25px;
+    color:#ffffff ;
+}
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    color:#ffffff ;
+}
+
+/* Configuracion de imagen ubicacion de imagen, altura, ancho */
+.imagen{
+  align-items: center;
+width: 1000px;
+height: 500px;
+}   
+/* Configuracion imagen de fondo, ubicacion de imagen, altura, ancho */
+
+.fondo {
+    text-align: center;
+    background-image: url('imgs/expancion.png');
+    background-size: cover;
+    background-position: center;
+    height: 350px; 
+}
+/* Crear fondos de color en forma de barra para los titulos */
+
+.roj {
+    background-color: #3b8cbb; 
+    color: #ffffff; 
+    padding: 3px;
+    text-align: center;
+}
+/* Color de ultima tabla horarios */
+h2 {
+    color: #555;
+    margin-top: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Margen inferior de la tabla */
+li {
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    margin: -20 auto;
+}
+/* Tabla con imagenes y ajustes de tamaños, modo para juntar imagenes*/
+
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
+.Slider{
+    margin:60px;
+width: 95%;
+height: 900px;
+overflow: hidden;
+} 
+
+.Slider ul{
+    display: flex; 
+    width: 90%;
+    } 
+
+.Slider li{
+    width: 100%;
+    list-style: none;
+    } 
+    
+.Slider img{
+    width: 100%;
+    height: 100%;
+    
+    } 
+/* Asignar a la tabla un borde y agregar relleno en todos los lados de una celda de tabla,   */
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Asignar color de fondo a la tabla de servicios  */
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.seg, .tree {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Estilo para el título h2 dentro de los elementos con clase "seg" y "tree" */
+  .seg h2, .tree h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Estilo para las listas ul dentro de los elementos con clase "seg" y "tree" */
+  .seg ul, .tree ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Estilo para los elementos li dentro de los elementos con clase "seg" y "tree" */
+  .seg li, .tree li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para resaltar los elementos de la lista dentro de los elementos con clase "seg" y "tree" */
+  .seg li:nth-child(odd), .tree li:nth-child(odd) {
+    background-color: #eee;
+  }
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Crear recuadro con efectos RGB */
+.contenedor{
+    height: 300px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta{
+    height: 250px;
+    width: 200px;
+    background-color: #d6d6d6;
+    border-radius: 10%;
+    box-shadow: 16px 14px 20px #d6d6d6;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta::before{
+    content: "";
+    position: absolute;
+    height: 500px;
+    width: 300px;
+    background-image: conic-gradient(rgb(81, 163, 230) 20deg, transparent 120deg);
+    animation: rotar 2s linear infinite;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.tarjeta::after{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 190px;
+    background-color: #ffffff;
+    border-radius: 10%;
+    box-shadow: inset 16px 14px 20px #76bde6;
+}
+.prim{
+    z-index: 2;
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(145, 145, 145);
+}
+
+.form-content{
+
+    background: linear-gradient(50deg,rgba(40,42,55,1) 50%,rgba(40,42,55,0.7)),
+    url(imgs/bg.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 750px;
+    border-radius: 25%;
+
+}
+
+
+.form-content h2{
+color: #f4f6f9;
+font-size: 40px;
+margin-bottom: 25px;
+}
+
+form{
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+}
+
+label{
+
+    font-size: 17px;
+    color: #959aab;
+    margin-bottom: 10px;
+}
+
+input, textarea{
+
+    padding: 17px 14px;
+    background-color: #333646;
+    border: 0;
+    font-size: 15px;
+    color: #F4F6F9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+:focus{
+    outline: 1px solid #1e92e9;
+}
+
+.btn{
+
+background-color: #1e92e9;
+width: 150px;
+align-self: flex-end;
+cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #219bf9;
+}
+
+@media(max-width:991px) 
+{
+    body{
+        padding: 30px;
+    } 
+
+    .form-content{
+        width: 100%;
+    }
+
+    form{
+        width: 100%;
+    }
+}
