@@ -1,13 +1,13 @@
 
 const firebaseConfig = {
     apiKey: "AIzaSyDck2ShGplLdMv4_-SKdVhAywake9YRe_0",
-    authDomain: "lecona-39ef9.firebaseapp.com",
-    databaseURL: "https://lecona-39ef9-default-rtdb.firebaseio.com",
-    projectId: "lecona-39ef9",
-    storageBucket: "lecona-39ef9.appspot.com",
-    messagingSenderId: "892874588189",
-    appId: "1:892874588189:web:11041181ac5fd9dae546f4",
-    measurementId: "G-B1HRS4ZPQG"
+  authDomain: "lecona-39ef9.firebaseapp.com",
+  databaseURL: "https://lecona-39ef9-default-rtdb.firebaseio.com",
+  projectId: "lecona-39ef9",
+  storageBucket: "lecona-39ef9.appspot.com",
+  messagingSenderId: "892874588189",
+  appId: "1:892874588189:web:bfbbd871671cf17be546f4",
+  measurementId: "G-8KZG4NCTNM"
   };
 
 
