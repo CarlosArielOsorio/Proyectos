@@ -14,14 +14,14 @@ targets.forEach(target => {
 
 
 const firebaseConfig = {
-	apiKey: "AIzaSyBU29QncCfvqd57BXuxpmdEPKJkd2iqjt8",
-    authDomain: "webb-1f3d1.firebaseapp.com",
-	databaseURL: "https://webb-1f3d1-default-rtdb.firebaseio.com/",
-    projectId: "webb-1f3d1",
-    storageBucket: "webb-1f3d1.appspot.com",
-    messagingSenderId: "96237937124",
-    appId: "1:96237937124:web:a2be14c8b71d240c9767f1",
-    measurementId: "G-2V7FGBDZB0"
+	piKey: "AIzaSyBU29QncCfvqd57BXuxpmdEPKJkd2iqjt8",
+  authDomain: "webb-1f3d1.firebaseapp.com",
+  databaseURL: "https://webb-1f3d1-default-rtdb.firebaseio.com",
+  projectId: "webb-1f3d1",
+  storageBucket: "webb-1f3d1.appspot.com",
+  messagingSenderId: "96237937124",
+  appId: "1:96237937124:web:a2be14c8b71d240c9767f1",
+  measurementId: "G-2V7FGBDZB0"
   };
 
 
