@@ -1,11 +1,11 @@
 <?php
 // Conexión a la base de datos (ajusta según tus credenciales)
 $servername = "LEIRA";
-$username = "LEIRA/osori";
-$password = "";
+$username = "Lecona";
+$password = "Holiloli";
 $dbname = "morenoLecona";
 
-$conn = new mysqli($LEIRA, $LEIRA/osori, $, $morenoLecona);
+$conn = new mysqli($LEIRA, $Lecona, $Holiloli, $morenoLecona);
 
 // Verificar la conexión
 if ($conn->connect_error) {
