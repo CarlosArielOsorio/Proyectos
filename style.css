@@ -177,19 +177,27 @@
     border-radius: 10px;
   }
   
-  .seg h2, .tree h2 {
+  .seg h2{
     font-size: 24px;
     color: #ffffff;
   }
-  
+  .tree h2 {
+    font-size: 24px;
+    color: #000000;
+  }
   .seg ul, .tree ul {
     list-style-type: none;
     padding: 0;
   }
   
-  .seg li, .tree li {
+  .seg li{
     font-size: 18px;
     color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .tree li {
+    font-size: 18px;
+    color: #000000;
     margin-bottom: 10px;
   }
   
