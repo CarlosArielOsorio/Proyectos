@@ -162,6 +162,7 @@ table th,
 table td {
     padding: 10px;
     border: 1px solid #ccc;
+    color: #ffffff;
 }
 
 /* Asignar color de fondo a la tabla de servicios  */
