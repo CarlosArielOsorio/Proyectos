@@ -126,6 +126,7 @@
   
   table {
     margin: -20 auto;
+    color: #ffffff;
   }
   
   *{
@@ -179,7 +180,7 @@
   
   .seg h2{
     font-size: 24px;
-    color: #ffffff;
+    color: #000000;
   }
   .tree h2 {
     font-size: 24px;
@@ -192,7 +193,7 @@
   
   .seg li{
     font-size: 18px;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 10px;
   }
   .tree li {
