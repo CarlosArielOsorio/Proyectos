@@ -17,7 +17,7 @@ body {
 .menu p {
 	margin-right: 2rem;
 	cursor: pointer;
-    
+    color: #ffffff;
 }
 
 .content {
@@ -192,7 +192,7 @@ table th {
   /* Estilo para el título h2 dentro de los elementos con clase "seg" y "tree" */
   .seg h2, .tree h2 {
     font-size: 24px;
-    color: #333;
+    color: #ffffff;
   }
   
   /* Estilo para las listas ul dentro de los elementos con clase "seg" y "tree" */
@@ -204,7 +204,7 @@ table th {
   /* Estilo para los elementos li dentro de los elementos con clase "seg" y "tree" */
   .seg li, .tree li {
     font-size: 18px;
-    color: #555;
+    color: #ffffff;
     margin-bottom: 10px;
   }
   
