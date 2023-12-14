@@ -20,12 +20,4 @@ $msgContent = $_POST['msgContent'];
 // Insertar datos en la base de datos
 $sql = "INSERT INTO tu_tabla (name, emailid, msgContent) VALUES ('$nombre', '$emailid','msgContent')";
 
-if ($conn->query($sql) === TRUE) {
-    echo "Registro exitoso";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-// Cerrar la conexión
-$conn->close();
 ?>
