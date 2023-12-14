@@ -1,5 +1,14 @@
 const targets = document.querySelectorAll('[data-target]')
 const content = document.querySelectorAll('[data-content]')
+targets.forEach(target => {
+	target.addEventListener('click', () => {
+		content.forEach(c => {
+			c.classList.remove('active')
+		})
+		const t = document.querySelector(target.dataset.target)
+		t.classList.add('active')
+	})
+})
 const firebaseConfig = {
     apiKey: "AIzaSyBGT30mAGo303-c-tR0ww1eXiJKWEHv68o",
   authDomain: "proyecto-60679.firebaseapp.com",
