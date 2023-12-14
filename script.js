@@ -1,4 +1,3 @@
-
 const targets = document.querySelectorAll('[data-target]')
 const content = document.querySelectorAll('[data-content]')
 
@@ -40,7 +39,7 @@ e.preventDefault();
 var name = getElementVal("name");
 var emailid = getElementVal("emailid");
 var msgContent = getElementVal("msgContent");
- 
+
 saveMessages(name, emailid, msgContent);
 
 document.querySelector(".alert").style.display = "block";
