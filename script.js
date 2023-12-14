@@ -14,14 +14,14 @@ targets.forEach(target => {
 
 
 const firebaseConfig = {
-	apiKey: "AIzaSyBGT30mAGo303-c-tR0ww1eXiJKWEHv68o",
-  authDomain: "proyecto-60679.firebaseapp.com",
-  databaseURL: "https://proyecto-60679-default-rtdb.firebaseio.com",
-  projectId: "proyecto-60679",
-  storageBucket: "proyecto-60679.appspot.com",
-  messagingSenderId: "966958460051",
-  appId: "1:966958460051:web:9e8b17c4cabe86185cf166",
-  measurementId: "G-GLWZWMQ8HP"
+	apiKey: "AIzaSyBU29QncCfvqd57BXuxpmdEPKJkd2iqjt8",
+    authDomain: "webb-1f3d1.firebaseapp.com",
+	databaseURL: "https://webb-1f3d1-default-rtdb.firebaseio.com/",
+    projectId: "webb-1f3d1",
+    storageBucket: "webb-1f3d1.appspot.com",
+    messagingSenderId: "96237937124",
+    appId: "1:96237937124:web:a2be14c8b71d240c9767f1",
+    measurementId: "G-2V7FGBDZB0"
   };
 
 
@@ -30,9 +30,9 @@ firebase.initializeApp(firebaseConfig);
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-var contactFormDB = firebase.database().ref("contactForm");
+var contacFormDB = firebase.database().ref("contacForm");
 
-document.getElementById("contactForm").addEventListener("submit", submitForm);
+document.getElementById("contacForm").addEventListener("submit", submitForm);
 
 function submitForm(e) {
 e.preventDefault();
@@ -50,13 +50,13 @@ setTimeout(() => {
   document.querySelector(".alert").style.display = "none";
 }, 3000);
 
-document.getElementById("contactForm").reset();
+document.getElementById("contacForm").reset();
 }
 
 const saveMessages = (name, emailid, msgContent) => {
-var newContactForm = contactFormDB.push();
+var newContacForm = contacFormDB.push();
 
-newContactForm.set({
+newContacForm.set({
   name: name,
   emailid: emailid,
   msgContent: msgContent,
