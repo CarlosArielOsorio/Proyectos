@@ -58,6 +58,7 @@ body {
  font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify; 
 font-size: 26px;
+color: #ffffff;
 }
 
 .fotico{
@@ -101,7 +102,7 @@ height: 500px;
 }
 /* Color de ultima tabla horarios */
 h2 {
-    color: #555;
+    color: #ffffff;
     margin-top: 20px;
 }
 
@@ -114,6 +115,7 @@ ul {
 /* Margen inferior de la tabla */
 li {
     margin-bottom: 10px;
+    color: #ffffff;
 }
 
 
