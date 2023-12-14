@@ -1,33 +1,18 @@
-const targets = document.querySelectorAll('[data-target]')
-const content = document.querySelectorAll('[data-content]')
-
-targets.forEach(target => {
-	target.addEventListener('click', () => {
-		content.forEach(c => {
-			c.classList.remove('active')
-		})
-		const t = document.querySelector(target.dataset.target)
-		t.classList.add('active')
-	})
-})
-
 
 const firebaseConfig = {
-	apiKey: "AIzaSyAxFqxSdn5OzRMcPQq_SrLOxUe2hbLOZbA",
-	authDomain: "pagina-web-2af43.firebaseapp.com",
-	databaseURL: "https://pagina-web-2af43-default-rtdb.firebaseio.com",
-	projectId: "pagina-web-2af43",
-	storageBucket: "pagina-web-2af43.appspot.com",
-	messagingSenderId: "479718051784",
-	appId: "1:479718051784:web:2241939793df522cc1fafd",
-	measurementId: "G-ELMGBK0D32"
+    apiKey: "AIzaSyDck2ShGplLdMv4_-SKdVhAywake9YRe_0",
+    authDomain: "lecona-39ef9.firebaseapp.com",
+    databaseURL: "https://lecona-39ef9-default-rtdb.firebaseio.com",
+    projectId: "lecona-39ef9",
+    storageBucket: "lecona-39ef9.appspot.com",
+    messagingSenderId: "892874588189",
+    appId: "1:892874588189:web:11041181ac5fd9dae546f4",
+    measurementId: "G-B1HRS4ZPQG"
   };
 
 
 firebase.initializeApp(firebaseConfig);
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 var contactFormDB = firebase.database().ref("contactForm");
 
