@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jesus Lecona</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Navegacion por pestañas</title>
+
+	<link rel="stylesheet" href="./estilos.css">
+	<script src="./script.js" defer></script>
 </head>
 <body>
-    <!-- Fondo Logo + Bienvenida -->
-    <header>
+  
+	
+<!-- Fondo Logo + Bienvenida -->
+
+
+	<header>
         <div class="fondo"></div>
         <div class="roj">
             <div class="titulosprincipales">
-               <h1> Bienvenido a XGaming</h1>
+               <h1> Tienda de Computadoras</h1>
                 </div>
         
         <br>
         </div>
     </header>
-    
-<!-- Cajita RGB y mini introduccion -->    
-    <section>
-        <div class="contenedor">
-           
-            <div class="tarjeta">
-                <div class="prim">
-                    <h2>Encontraras</h2> 
-                <ul> 
-                    <li>Quienes somos</li> 
-                    <li>Mision y Vision</li> 
-                    <li>Financiamiento</li>
-                    <li>Productos y Cursos</li> 
-                </ul> 
-                </div>
-            </div>
-        </div>
-        <div class="fotico">
-            <br>
-            <img src="imgs/Team2.png" alt="Campeones" width="1080px" height="500px">
-        </div>
-    </section>
 
-<!-- Salto de lineas para dar un margen antes del siguiente cadro de titulo -->
-    <p><br></p>
+	<div class="menu">
+		<p data-target="#inicio"><b>Inicio</b></p>
+		<p data-target="#nosotros"><b>Nosotros</b></p>
+		<p data-target="#productos"><b>Productos</b></p>
+		<p data-target="#contacto"><b>Contacto</b></p>
+	</div>
+  
+
+	<div class="content">
+		<div data-content id="inicio" class="active">
+		
+		
+			<h1>Inicio</h1>
+
+			<section>
+				<div class="contenedor">
+					<div class="tarjeta">
+						<div class="prim">
+							<h2>Bienvenidos!!</h2> 
+						</div>
+					</div>
+				</div>
+				<div class="fotico">
+					<br>
+					<img src="imgs/vii.jpg" alt="" width="1080px" height="500px">
+				</div>
+			</section>
+		</div>
 
 
-<!-- Presentacion -->
+<!-- Nosotros -->
+
+		<div data-content id="nosotros">
+		
+<!-- Quienes somos -->
 <header>
     <div class="roj">
         <div class="titulo">
@@ -53,12 +67,13 @@
             </div>
     </div>
 </header>
-<div class="parrafos">
-<p><br>Somos un equipo e-sport que se encuentra en crecimiento, buscando entrar en ligas mayores. Nos centramos por el momento en el juego shooter tactico llamdo valorant, por ahora contamos con 2 equipos. El equipo central o Roster principal estos chicos son jugadores muy experementados con un nivel alto en el juego son quienes conforman la cabeza de XGaming. Contamos con una Academia para la gente que busca mejorar sus habilidades llegar a participar en eventos que puedan sumarles experiencia y sobre todo un aporte economico. </p>
-<center><img class="imagen" src="imgs/team.png" ></center>
+
+<div class="content">
+        <div class="parrafos">
+<p><br>Nos llamamos Ztonks Shop somos una tienda de origen Mexicano dedicada al armado de computadoras de todo tipo de gamas. Ya sea de alta gama, media o baja. Prestamos servicio desde el 2022 y contamos con mas de 500 ensambles exitosos. Tambien aqui podras encontrar equipos perzonalizados que van desde una sola marca el armado hasta un ajuste personalizado de acuerdo a tu presupuesto. </p>
+<center><img class="imagen" src="imgs/equipo.jpg" ></center>
 <br>
 </div>
-
 
 <!-- Mision -->
 <div class="roj">
@@ -66,10 +81,12 @@
      Mision
         </div>
 </div>
+
 <div class="parrafos">
-<p><br>Proporcionar sistemas informáticos personalizables de alta calidad y servicios de asistencia para jugadores y profesionales de los deportes electrónicos, fomentando al mismo tiempo una comunidad de juegos competitivos e innovación.
-    Esta declaración de misión combina los aspectos centrales del negocio de la empresa, que son el ensamblaje de ordenadores y la gestión de esports, al tiempo que subraya la importancia de la calidad, la personalización y la creación de comunidades. El hecho de que la empresa se centre tanto en los aspectos de hardware como de software de los juegos la diferencia de las empresas tradicionales de ensamblaje de ordenadores y pone de relieve su propuesta de valor única para los jugadores y los profesionales de los deportes electrónicos.</p>
-    <center><img class="imagen" src="imgs/Computadora.png" ></center>
+    <p></p>
+<p><br>La misión de nuestra empresa dedicada al montaje de ordenadores de todo tipo de gamas y a la realización de montajes a medida es proporcionar soluciones informáticas a medida y de alto rendimiento que permitan a nuestros clientes alcanzar sus objetivos. Estamos comprometidos a ofrecer una experiencia perfecta, desde comprender las necesidades específicas de nuestros clientes hasta entregar sistemas informáticos confiables e innovadores hechos a medida. Nuestra misión es garantizar que cada computadora que ensamblamos, ya sea estándar o personalizada, cumpla con los más altos estándares de calidad y rendimiento, mejorando en última instancia la productividad y la satisfacción de nuestros clientes.
+</p>
+    <center><img class="imagen" src="imgs/arma2.jpg" ></center>
     <br>
 </div>
 
@@ -82,73 +99,88 @@
 </div>
 
 
+
     <div class="parrafos">
-        <p><br>Ser el proveedor líder de tecnología puntera de videojuegos y gestión de esports, revolucionando la forma en que los jugadores compiten y se conectan a nivel mundial.
-            Esta declaración de visión engloba los objetivos de innovación, liderazgo e impacto global de la empresa. Al hacer hincapié en la importancia tanto de la tecnología como de la gestión de los esports, la empresa pretende diferenciarse de las empresas tradicionales de ensamblaje de ordenadores y posicionarse como un actor clave en la industria del videojuego. El objetivo de revolucionar la forma en que los jugadores compiten y se conectan pone de relieve el compromiso de la empresa con la creación de una experiencia de juego única y envolvente para sus clientes.</p>
-            <center><img class="imagen" src="imgs/Computadoras2.png" ></center>
+        <p><br>La visión de nuestra empresa dedicada a construir PC de todo tipo de gamas y ofrecer construcciones personalizadas es ser el principal proveedor de soluciones informáticas personalizadas, atendiendo las diversas necesidades de nuestros clientes. Visualizamos un futuro en el que cada individuo y empresa pueda experimentar el poder de la informática personalizada, donde el alto rendimiento y la confiabilidad se integren perfectamente en cada sistema que ensamblamos. Nuestra visión es establecer el estándar para la construcción de PC personalizadas, garantizando que cada computadora refleje los requisitos y preferencias únicos de su usuario, mejorando en última instancia la productividad, la creatividad y el disfrute.
+        </p>
+            <center><img class="imagen" src="imgs/4k.jpg" ></center>
             <br>
         </div>
-<!-- Financiamiento -->
-<div class="roj">
-    <div class="titulo">
-Financiamiento
-    </div>
+		</div>
+
+ <!-- Productos -->
+
+
+	
+
+</div>
+<div data-content id="productos">
+
+
+	<div class="parrafos">
+		<p>Aqui podras consultar algunos servicios y su costo aproximado, recuerda que para mas informacion puedes unirte a nuestro server de discord y pedir alguna informacion, cotizacion o ensblado personalizado. Aqui te dejamos el url para que puedas acceder <a href="https://discord.gg/zuSpa9ZD">Ir al servidor de Discord</a> </p>
+		</div>
+		<center>               
+			<table>
+			<tr> <th>Servicio</th> <th>Precio </th> </tr> 
+			<tr> <td>Cotizacion de ensamblado</td> <td>$100 mx</td> </tr> 
+			<tr> <td>Curso de informatica nivel basico</td> <td>$400 mx</td> </tr> 
+			<tr> <td>Curso de informatica nivel medio</td> <td>$500 mx</td> </tr> 
+			<tr> <td>Cursp de informatica nivel avanzada</td> <td>$600 mx</td> </tr>
+			<tr> <th>Productos</th> <th>Precio </th> </tr> 
+			<tr> <td>Procesadores 5ta generacion</td> <td>$2,700 mx</td> </tr> 
+			<tr> <td>Ventiladores </td> <td>$600 mx</td> </tr> 
+			<tr> <td>Fuentes</td> <td>$1,300 mx</td> </tr> 
+			<tr> <td>Gabinetes </td> <td>$2,000 mx </td> </tr>
+			<tr> <td>Tarjetas Ram </td> <td>$1,900 mx</td> </tr>
+			<tr> <td>Graficas </td> <td>$2,000 a $13,000 mx</td> </tr>
+			<tr> <td>Almacenamiendo SSD </td> <td>$1,000 mx</td> </tr>
+			<tr> <td>Disco Duro </td> <td>$1,300 mx</td> </tr>
+			<tr> <th>Ensablado</th> <th>Precio </th> </tr> 
+			<tr> <td>Sencillo </td> <td>$1,000 mx</td> </tr>
+			<tr> <td>Completo </td> <td>Piezas + $ 600 mx </td> </tr>
+		</table>
+	</center>
+
+
 </div>
 
-<div class="parrafos">
-    <p><br> Al ser un equipo nuevo, implica gastar una grande cantidad de dinero para ir consiguiendo mejoras. No solo haciendo referencia a buenos equipos de computo si no que tambien a la adquision de uniformes, cuota de inscripciones, mejoras de red, pagos de entrenadores, psicologos. Para ello XGaming cuenta con personal capacitado en los temas de informatica pero sobre todo de ensamblado de hardware y componentes de nueva generacion, contamos con varias ensamblados realizados que van desde lo mas economico hasta lo ultimo en tecnologia. Tambien tenemos cotizaciones para que XGaming arme tu primer computador ya sea para uso escolar, personal o incluso el esperado competitivo. En el siguiente panel mostramos algunos de nuestros montados mas potentes y de calidad hasta la fecha habiendo variaciones desde $ 15,000 hasta los $ 30,000</p>
 </div>
 
-<div class="Slider">
+</div>
+
+<!-- Contacto -->
+
+		<div data-content id="contacto">
+			<h1>Contacto</h1>
+
+<!-- Formulario-->
 <center>
-    <ul>
-        <li><img class="imagen" src="imgs/PC1.jpg" alt="" ></li>
-        <li><img class="imagen" src="imgs/PC2.jpg" alt=""></li>
-        <li><img class="imagen" src="imgs/PC5.PNG" alt=""></li>
-        <li><img class="imagen" src="imgs/PC6.png" alt=""></li>
-    </ul>
-</center>
-</div> 
-
-
-
-<!-- Tablas y curso -->
-<div class="roj">
-    <div class="titulo">
-Tablas de Servicios
-        </div>
-</div>
-            <div class="parrafos">
-                <p>Aqui podras consultar algunos servicios y su costo aproximado, recuerda que para mas informacion puedes unirte a nuestro server de discord y pedir alguna informacion, cotizacion o ensblado personalizado. Aqui te dejamos el url para que puedas acceder <a href="https://discord.gg/6wSAzxFYja">Ir al servidor de Discord</a> </p>
-                </div>
-                <center>               
-                    <table>
-                    <tr> <th>Servicio</th> <th>Precio </th> </tr> 
-                    <tr> <td>Cotizacion de ensamblado</td> <td>$100 mx</td> </tr> 
-                    <tr> <td>Curso de informatica nivel basico</td> <td>$400 mx</td> </tr> 
-                    <tr> <td>Curso de informatica nivel medio</td> <td>$500 mx</td> </tr> 
-                    <tr> <td>Cursp de informatica nivel avanzada</td> <td>$600 mx</td> </tr>
-                    <tr> <th>Productos</th> <th>Precio </th> </tr> 
-                    <tr> <td>Procesadores 5ta generacion</td> <td>$2,700 mx</td> </tr> 
-                    <tr> <td>Ventiladores </td> <td>$600 mx</td> </tr> 
-                    <tr> <td>Fuentes</td> <td>$1,300 mx</td> </tr> 
-                    <tr> <td>Gabinetes </td> <td>$2,000 mx </td> </tr>
-                    <tr> <td>Tarjetas Ram </td> <td>$1,900 mx</td> </tr>
-                    <tr> <td>Graficas </td> <td>$2,000 a $13,000 mx</td> </tr>
-                    <tr> <td>Almacenamiendo SSD </td> <td>$1,000 mx</td> </tr>
-                    <tr> <td>Disco Duro </td> <td>$1,300 mx</td> </tr>
-                    <tr> <th>Ensablado</th> <th>Precio </th> </tr> 
-                    <tr> <td>Sencillo </td> <td>$1,000 mx</td> </tr>
-                    <tr> <td>Completo </td> <td>Piezas + $ 600 mx </td> </tr>
-                </table>
-            </center>
  
+    <div class="form-content">
+        <ul> 
+        <h2> Envia tu presupuesto para recibir opciones de armado</h2>
+        <form id="contactForm">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name">
+    
+        <label for="email">Correo Electronico</label>
+        <input type="text" name="subject" id="emailid">
+    
+        <label for="coments">Comentarios</label>
+        <textarea name="coments"  id="msgContent" cols="30" rows="5"></textarea>
+    
+        <input class="btn"  type="submit" value="Enviar" id="btnEnviar">
 
+        </form>
+  
+</div>
 
-
-<!-- Tabla con horarios de atencion-->
-
-    <article>
+			<!-- Tabla con horarios de atencion-->
+    
+	
+	
+<article>
         <div class="tree">
             <h2>Horarios de atencion </h2> 
             <ul> 
@@ -157,55 +189,14 @@ Tablas de Servicios
         </ul> 
         </div>
     </article>
+</div>	
+	</div>
+	<br>
+	  <script src="https://pagina-web-2af43-default-rtdb.firebaseio.com/"></script>
+	  <script src="./script.js"></script>
 
 
-<!-- Formulario-->
- <center>
-    <div class="form-content" id="return">
-        <ul> 
-        <h2> Envia tu presupuesto para recibir opciones de armado</h2>
-        <form>
-        <label for="name">Nombre</label>
-        <input type="text" name="name" id="name">
-    
-        <label for="email">Correo Electronico</label>
-        <input type="text" name="subject" id="subject">
-    
-        <label for="coments">Comentarios</label>
-        <textarea name="coments"  id="coments" cols="30" rows="5"></textarea>
-    
-        <input class="btn"  type="submit" value="Enviar">
 
-        </form>
-        
-    </div>
-</center>
-<!-- Tabla con Contacto-->
-<br>
-        <footer>
-            <br>
-            <h3>Contacto</h3>
-            <p>Email:<a href="Email">XGamingsport@gmail.com</a></p>
-            <p>Celular: +1 832 239 5545</p> 
-            <br>
-        </footer>
-        <!--Coneccion con base de datos firebase-->
-        <script type="module">
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
-            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
-            const firebaseConfig = {
-              apiKey: "AIzaSyDck2ShGplLdMv4_-SKdVhAywake9YRe_0",
-              authDomain: "lecona-39ef9.firebaseapp.com",
-              projectId: "lecona-39ef9",
-              storageBucket: "lecona-39ef9.appspot.com",
-              messagingSenderId: "892874588189",
-              appId: "1:892874588189:web:7fd1e6befdccfe06e546f4",
-              measurementId: "G-HBWBSDTHEJ"
-            };
-          
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const analytics = getAnalytics(app);
-          </script>
+
 </body>
 </html>

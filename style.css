@@ -1,3 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	padding: 5%;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu p {
+	margin-right: 2rem;
+	cursor: pointer;
+}
+
+.content {
+	margin-top: 2rem;
+}
+
+[data-content] {
+	display: none;
+}
+
+.active[data-content] {
+	display: block;
+}
+
+
+
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0; 
@@ -5,9 +40,12 @@ body {
     background-color: #f7f7f7;
 }
 .parrafos{
+    margin-right: 10px;
+    margin-top: px;
+    display: flex;
  font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify; 
-font-size: 20px;
+font-size: 26px;
 }
 
 .fotico{
@@ -36,7 +74,7 @@ height: 500px;
 
 .fondo {
     text-align: center;
-    background-image: url('imgs/expancion.png');
+    background-image: url('imgs/Shop.png');
     background-size: cover;
     background-position: center;
     height: 350px; 
@@ -44,7 +82,7 @@ height: 500px;
 /* Crear fondos de color en forma de barra para los titulos */
 
 .roj {
-    background-color: #3b8cbb; 
+    background-color: #a13bbb; 
     color: #ffffff; 
     padding: 3px;
     text-align: center;
@@ -169,6 +207,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor:pointer;
 }
 
 .tarjeta{
@@ -189,7 +228,7 @@ section{
     position: absolute;
     height: 500px;
     width: 300px;
-    background-image: conic-gradient(rgb(81, 163, 230) 20deg, transparent 120deg);
+    background-image: conic-gradient(rgb(121, 34, 121) 20deg, transparent 120deg);
     animation: rotar 2s linear infinite;
 }
 
@@ -209,7 +248,7 @@ section{
     width: 190px;
     background-color: #ffffff;
     border-radius: 10%;
-    box-shadow: inset 16px 14px 20px #76bde6;
+    box-shadow: inset 16px 14px 20px #e676e0;
 }
 .prim{
     z-index: 2;
@@ -221,15 +260,13 @@ section{
 
 .form-content{
 
-    background: linear-gradient(50deg,rgba(40,42,55,1) 50%,rgba(40,42,55,0.7)),
-    url(imgs/bg.jpg);
+    background: linear-gradient(50deg,rgb(55, 40, 55) 50%,rgba(56, 16, 136, 0.7)),
+    url(imgs/Gaming.jpg);
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px;
-    width: 750px;
-    border-radius: 25%;
+  
 
 }
 
@@ -294,3 +331,5 @@ cursor: pointer;
         width: 100%;
     }
 }
+
+
