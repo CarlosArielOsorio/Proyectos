@@ -14,14 +14,14 @@ targets.forEach(target => {
 
 
 const firebaseConfig = {
-	apiKey: "AIzaSyBU29QncCfvqd57BXuxpmdEPKJkd2iqjt8",
-	databaseURL: "https://webb-1f3d1-default-rtdb.firebaseio.com/",
-    authDomain: "webb-1f3d1.firebaseapp.com",
-    projectId: "webb-1f3d1",
-    storageBucket: "webb-1f3d1.appspot.com",
-    messagingSenderId: "96237937124",
-    appId: "1:96237937124:web:a2be14c8b71d240c9767f1",
-    measurementId: "G-2V7FGBDZB0"
+	apiKey: "AIzaSyBGT30mAGo303-c-tR0ww1eXiJKWEHv68o",
+	authDomain: "proyecto-60679.firebaseapp.com",
+	databaseURL: "https://proyecto-60679-default-rtdb.firebaseio.com",
+	projectId: "proyecto-60679",
+	storageBucket: "proyecto-60679.appspot.com",
+	messagingSenderId: "966958460051",
+	appId: "1:966958460051:web:9e8b17c4cabe86185cf166",
+	measurementId: "G-GLWZWMQ8HP"
   };
 
 
@@ -40,7 +40,7 @@ e.preventDefault();
 var name = getElementVal("name");
 var emailid = getElementVal("emailid");
 var msgContent = getElementVal("msgContent");
- 
+
 saveMessages(name, emailid, msgContent);
 
 document.querySelector(".alert").style.display = "block";
