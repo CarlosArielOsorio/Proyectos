@@ -170,7 +170,9 @@ table th {
     background-color: #333;
     color: #fff;
 }
-
+table td{
+    color: #ffffff;
+}
 .seg, .tree {
     text-align: center;
     margin: 20px auto;
