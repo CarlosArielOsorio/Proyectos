@@ -1,5 +1,7 @@
+
 const targets = document.querySelectorAll('[data-target]')
 const content = document.querySelectorAll('[data-content]')
+
 targets.forEach(target => {
 	target.addEventListener('click', () => {
 		content.forEach(c => {
@@ -9,20 +11,24 @@ targets.forEach(target => {
 		t.classList.add('active')
 	})
 })
+
+
 const firebaseConfig = {
-    apiKey: "AIzaSyBGT30mAGo303-c-tR0ww1eXiJKWEHv68o",
-  authDomain: "proyecto-60679.firebaseapp.com",
-  databaseURL: "https://proyecto-60679-default-rtdb.firebaseio.com",
-  projectId: "proyecto-60679",
-  storageBucket: "proyecto-60679.appspot.com",
-  messagingSenderId: "966958460051",
-  appId: "1:966958460051:web:9e8b17c4cabe86185cf166",
-  measurementId: "G-GLWZWMQ8HP"
+	apiKey: "AIzaSyBGT30mAGo303-c-tR0ww1eXiJKWEHv68o",
+	authDomain: "proyecto-60679.firebaseapp.com",
+	databaseURL: "https://proyecto-60679-default-rtdb.firebaseio.com",
+	projectId: "proyecto-60679",
+	storageBucket: "proyecto-60679.appspot.com",
+	messagingSenderId: "966958460051",
+	appId: "1:966958460051:web:9e8b17c4cabe86185cf166",
+	measurementId: "G-GLWZWMQ8HP"
   };
 
 
 firebase.initializeApp(firebaseConfig);
 
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 var contactFormDB = firebase.database().ref("contactForm");
 
