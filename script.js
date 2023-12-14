@@ -40,7 +40,7 @@ e.preventDefault();
 var name = getElementVal("name");
 var emailid = getElementVal("emailid");
 var msgContent = getElementVal("msgContent");
-
+ 
 saveMessages(name, emailid, msgContent);
 
 document.querySelector(".alert").style.display = "block";
