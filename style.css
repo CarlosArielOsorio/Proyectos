@@ -1,8 +1,8 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -25,25 +25,25 @@ body {
 }
 
 .menu {
-	display: flex;
+    display: flex;
 }
 
 .menu p {
-	margin-right: 2rem;
-	cursor: pointer;
+    margin-right: 2rem;
+    cursor: pointer;
     color: #ffffff;
 }
 
 .content {
-	margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 [data-content] {
-	display: none;
+    display: none;
 }
 
 .active[data-content] {
-	display: block;
+    display: block;
 }
 
 .parrafos {
@@ -59,27 +59,28 @@ body {
 .fotico {
     margin-left: 30px;
 }
+
 /* Configuracion de titulos, ubicacion de texto, tamaño y color */
-.titulosprincipales
-{
+.titulosprincipales {
     text-align: center;
     font-size: 25px;
-    color:#ffffff ;
+    color: #ffffff;
 }
-.titulo{
+
+.titulo {
     text-align: center;
     font-size: 40px;
-    color:#ffffff ;
+    color: #ffffff;
 }
 
 /* Configuracion de imagen ubicacion de imagen, altura, ancho */
-.imagen{
-  align-items: center;
-width: 1000px;
-height: 500px;
+.imagen {
+    align-items: center;
+    width: 1000px;
+    height: 500px;
 }   
-/* Configuracion imagen de fondo, ubicacion de imagen, altura, ancho */
 
+/* Configuracion imagen de fondo, ubicacion de imagen, altura, ancho */
 .fondo {
     text-align: center;
     background-image: url('imgs/Shop.png');
@@ -87,20 +88,20 @@ height: 500px;
     background-position: center;
     height: 350px; 
 }
-/* Crear fondos de color en forma de barra para los titulos */
 
+/* Crear fondos de color en forma de barra para los titulos */
 .roj {
     background-color: #a13bbb; 
     color: #ffffff; 
     padding: 3px;
     text-align: center;
 }
+
 /* Color de ultima tabla horarios */
 h2 {
     color: #555;
     margin-top: 20px;
 }
-
 
 ul {
     list-style-type: none;
@@ -112,7 +113,6 @@ li {
     margin-bottom: 10px;
 }
 
-
 footer {
     background-color: #333;
     color: #fff;
@@ -123,39 +123,37 @@ footer {
 table {
     margin: -20 auto;
 }
-/* Tabla con imagenes y ajustes de tamaños, modo para juntar imagenes*/
 
-*{
+/* Tabla con imagenes y ajustes de tamaños, modo para juntar imagenes*/
+* {
     margin: 5px;
     padding: 0;
     box-sizing: border-box;
 } 
 
-
-.Slider{
+.Slider {
     margin:60px;
-width: 95%;
-height: 900px;
-overflow: hidden;
+    width: 95%;
+    height: 900px;
+    overflow: hidden;
 } 
 
-.Slider ul{
+.Slider ul {
     display: flex; 
     width: 90%;
-    } 
+} 
 
-.Slider li{
+.Slider li {
     width: 100%;
     list-style: none;
-    } 
-    
-.Slider img{
+} 
+
+.Slider img {
     width: 100%;
     height: 100%;
-    
-    } 
-/* Asignar a la tabla un borde y agregar relleno en todos los lados de una celda de tabla,   */
+} 
 
+/* Asignar a la tabla un borde y agregar relleno en todos los lados de una celda de tabla,   */
 table th,
 table td {
     padding: 10px;
@@ -176,49 +174,49 @@ table th {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
-  }
-  
-  /* Estilo para el título h2 dentro de los elementos con clase "seg" y "tree" */
-  .seg h2, .tree h2 {
+}
+
+/* Estilo para el título h2 dentro de los elementos con clase "seg" y "tree" */
+.seg h2, .tree h2 {
     font-size: 24px;
     color: #333;
-  }
-  
-  /* Estilo para las listas ul dentro de los elementos con clase "seg" y "tree" */
-  .seg ul, .tree ul {
+}
+
+/* Estilo para las listas ul dentro de los elementos con clase "seg" y "tree" */
+.seg ul, .tree ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  /* Estilo para los elementos li dentro de los elementos con clase "seg" y "tree" */
-  .seg li, .tree li {
+}
+
+/* Estilo para los elementos li dentro de los elementos con clase "seg" y "tree" */
+.seg li, .tree li {
     font-size: 18px;
     color: #555;
     margin-bottom: 10px;
-  }
-  
-  /* Estilo para resaltar los elementos de la lista dentro de los elementos con clase "seg" y "tree" */
-  .seg li:nth-child(odd), .tree li:nth-child(odd) {
+}
+
+/* Estilo para resaltar los elementos de la lista dentro de los elementos con clase "seg" y "tree" */
+.seg li:nth-child(odd), .tree li:nth-child(odd) {
     background-color: #eee;
-  }
-section{
+}
+
+section {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
 /* Crear recuadro con efectos RGB */
-.contenedor{
+.contenedor {
     height: 300px;
     width: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.tarjeta{
+.tarjeta {
     height: 250px;
     width: 200px;
     background-color: #d6d6d6;
@@ -231,7 +229,7 @@ section{
     justify-content: center;
 }
 
-.tarjeta::before{
+.tarjeta::before {
     content: "";
     position: absolute;
     height: 500px;
@@ -240,103 +238,9 @@ section{
     animation: rotar 2s linear infinite;
 }
 
-@keyframes rotar{
-    from{
+@keyframes rotar {
+    from {
         transform: rotate(0deg);
     }
-    to{
-        transform: rotate(-360deg);
-    }
-}
-
-.tarjeta::after{
-    content: "";
-    position: absolute;
-    height: 240px;
-    width: 190px;
-    background-color: #ffffff;
-    border-radius: 10%;
-    box-shadow: inset 16px 14px 20px #e676e0;
-}
-.prim{
-    z-index: 2;
-    background-color: transparent;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    text-shadow: 5px 5px 5px rgb(145, 145, 145);
-}
-
-.form-content{
-
-    background: linear-gradient(50deg,rgb(55, 40, 55) 50%,rgba(56, 16, 136, 0.7)),
-    url(imgs/Gaming.jpg);
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-
-}
-
-
-.form-content h2{
-color: #f4f6f9;
-font-size: 40px;
-margin-bottom: 25px;
-}
-
-form{
- display: flex;
- flex-direction: column;
- width: 50%;
-}
-
-label{
-
-    font-size: 17px;
-    color: #959aab;
-    margin-bottom: 10px;
-}
-
-input, textarea{
-
-    padding: 17px 14px;
-    background-color: #333646;
-    border: 0;
-    font-size: 15px;
-    color: #F4F6F9;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-:focus{
-    outline: 1px solid #1e92e9;
-}
-
-.btn{
-
-background-color: #1e92e9;
-width: 150px;
-align-self: flex-end;
-cursor: pointer;
-}
-
-.btn:hover{
-    background-color: #219bf9;
-}
-
-@media(max-width:991px) 
-{
-    body{
-        padding: 30px;
-    } 
-
-    .form-content{
-        width: 100%;
-    }
-
-    form{
-        width: 100%;
-    }
-}
+    to
 
