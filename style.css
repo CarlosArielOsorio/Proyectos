@@ -178,27 +178,19 @@
     border-radius: 10px;
   }
   
-  .seg h2{
+  .seg h2, .tree h2 {
     font-size: 24px;
     color: #000000;
   }
-  .tree h2 {
-    font-size: 24px;
-    color: #000000;
-  }
+  
   .seg ul, .tree ul {
     list-style-type: none;
     padding: 0;
   }
   
-  .seg li{
+  .seg li, .tree li {
     font-size: 18px;
-    color: #000000;
-    margin-bottom: 10px;
-  }
-  .tree li {
-    font-size: 18px;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 10px;
   }
   
@@ -279,7 +271,7 @@
   }
   
   .form-content h2 {
-    color: #000000;
+    color: #f4f6f9;
     font-size: 40px;
     margin-bottom: 25px;
   }
