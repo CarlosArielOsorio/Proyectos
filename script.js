@@ -1,4 +1,5 @@
-
+const targets = document.querySelectorAll('[data-target]')
+const content = document.querySelectorAll('[data-content]')
 const firebaseConfig = {
     apiKey: "AIzaSyBGT30mAGo303-c-tR0ww1eXiJKWEHv68o",
   authDomain: "proyecto-60679.firebaseapp.com",
