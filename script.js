@@ -66,3 +66,24 @@ newContacForm.set({
 const getElementVal = (id) => {
 return document.getElementById(id).value;
 };
+
+let carrito = [];
+let total = 0;
+
+function agregarAlCarrito(nombre, precio) {
+    carrito.push({ nombre, precio });
+    total += precio;
+    actualizarCarrito();
+}
+
+function actualizarCarrito() {
+    const listaCarrito = document.getElementById('listaCarrito');
+    const totalCarrito = document.getElementById('totalCarrito');
+    listaCarrito.innerHTML = '';
+    carrito.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.nombre} - $${item.precio}`;
+        listaCarrito.appendChild(li);
+    });
+    totalCarrito.textContent = total;
+}
