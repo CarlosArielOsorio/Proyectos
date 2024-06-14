@@ -71,19 +71,30 @@ let carrito = [];
 let total = 0;
 
 function agregarAlCarrito(nombre, precio) {
+    // Añadir el producto al carrito
     carrito.push({ nombre, precio });
+    
+    // Sumar el precio al total
     total += precio;
+    
+    // Actualizar la visualización del carrito
     actualizarCarrito();
 }
 
 function actualizarCarrito() {
     const listaCarrito = document.getElementById('listaCarrito');
     const totalCarrito = document.getElementById('totalCarrito');
+    
+    // Limpiar la lista actual del carrito
     listaCarrito.innerHTML = '';
+    
+    // Recorrer el carrito y mostrar cada producto
     carrito.forEach(item => {
         const li = document.createElement('li');
         li.textContent = `${item.nombre} - $${item.precio}`;
         listaCarrito.appendChild(li);
     });
+    
+    // Actualizar el total
     totalCarrito.textContent = total;
 }
