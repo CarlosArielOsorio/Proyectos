@@ -39,7 +39,10 @@ body {
     cursor: pointer;
     color: #F68176; /* color de texto del menú */
 }
-
+.subcla li{
+    text-decoration: none;
+    color: #F68176;
+}
 .content {
     margin-top: 2rem;
 }
