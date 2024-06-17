@@ -2,65 +2,66 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
+  }
+  
+  header {
+    background-color: #333; /* Dark Gray */
+    color: #fff; /* White */
     padding: 10px 0;
     text-align: center;
-}
-
-header nav ul {
+  }
+  
+  header nav ul {
     list-style-type: none;
     padding: 0;
-}
-
-header nav ul li {
+  }
+  
+  header nav ul li {
     display: inline;
     margin: 0 15px;
-}
-
-header nav ul li a {
-    color: #fff;
+  }
+  
+  header nav ul li a {
+    color: #fff; /* White */
     text-decoration: none;
-}
-
-main {
+  }
+  
+  main {
     padding: 20px;
-}
-
-h2 {
-    color: #333;
-}
-
-.producto {
+  }
+  
+  h2 {
+    color: #333; /* Dark Gray */
+  }
+  
+  .producto {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px 0;
-}
-
-button {
-    background-color: #28a745;
-    color: #fff;
+  }
+  
+  button {
+    background-color: #28a745; /* Green */
+    color: #fff; /* White */
     border: none;
     padding: 10px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-#carrito {
+  }
+  
+  button:hover {
+    background-color: #218838; /* Darker Green */
+  }
+  
+  #carrito {
     margin-top: 20px;
-}
-
-#carrito ul {
+  }
+  
+  #carrito ul {
     list-style-type: none;
     padding: 0;
-}
-#buscador {
+  }
+  
+  #buscador {
     margin-bottom: 20px; /* Espacio debajo del buscador */
   }
   
@@ -75,4 +76,35 @@ button:hover {
   
   .producto__descripcion {
     margin-top: 5px; /* Espacio entre nombre y descripción */
+  }
+  
+  /* New colors added */
+  
+  .producto {
+    border-color: #ccc; /* Light Gray */
+  }
+  
+  #carrito p span { /* Total price indicator */
+    color: #b240c1; /* Purple */
+  }
+  
+  /* Optional: You can add colors for specific sections */
+  
+  header {
+    background-color: #5a2c94; /* Dark Blue */
+  }
+  
+  #buscador {
+    background-color: #5d32c7; /* Lighter Blue */
+    padding: 10px;
+  }
+  
+  #barraBusqueda {
+    background-color: #F68176; /* Light Orange */
+    color: #000; /* Black */
+  }
+  
+  #resultadosBusqueda {
+    background-color: #808dae; /* Light Purple */
+    color: #000; /* Black */
   }
