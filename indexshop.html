@@ -6,9 +6,27 @@
     <title>Sección de Compras</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body> 
     <header>
-        <h1>Tienda de Hardware y Software</h1>
+        <div class="fondo"></div>
+        <div class="roj">
+            <div class="titulosprincipales">
+               <h1> Tienda de Computadoras</h1>
+                </div>
+        
+        <br>
+        </div>
+    </header>
+
+	<div class="menu">
+		<p data-target="#inicio"><b>Inicio</b></p>
+		<p data-target="#nosotros"><b>Nosotros</b></p>
+		<p data-target="#productos"><b>Productos</b></p>
+		<p data-target="#contacto"><b>Contacto</b></p>
+		<a href="indexshop.html">carrito</a>
+	</div>
+
+    <h1>Tienda de Hardware y Software</h1>
         <nav>
             <ul>
                 <li><a href="#hardware">Hardware</a></li>
@@ -16,7 +34,6 @@
                 <li><a href="#carrito">Carrito</a></li>
             </ul>
         </nav>
-    </header>
     
     <main>
         <section id="buscador">
@@ -25,7 +42,7 @@
             <button onclick="buscarProductos()">Buscar</button>
             <div id="resultadosBusqueda"></div>
           </section>
-          
+
         <section id="hardware">
             <h2>Hardware</h2>
             <div class="producto">
