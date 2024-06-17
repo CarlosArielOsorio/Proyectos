@@ -292,3 +292,51 @@ input, textarea {
         width: 100%;
     }
 }
+/* Search bar styles */
+#buscador {
+    margin: 20px auto; /* Adjust margins as needed */
+    display: flex; /* Allow for inline elements */
+    width: 60%; /* Adjust width as needed */
+  }
+  
+  #barraBusqueda {
+    background-color: #F68176; /* Light orange for search bar */
+    color: #000; /* Black text */
+    border: none; /* Remove default border */
+    padding: 10px; /* Padding for search input */
+    border-radius: 5px; /* Rounded corners */
+    flex-grow: 1; /* Allow search bar to fill remaining space */
+  }
+  
+  #barraBusqueda::placeholder { /* Style placeholder text */
+    color: #ccc; /* Light gray for placeholder */
+  }
+  
+  #lupa { /* Styles for optional search icon (adjust as needed) */
+    margin-left: 10px;
+    cursor: pointer;
+    color: #F68176; /* Light orange for icon */
+    font-size: 1.5em; /* Adjust icon size */
+  }
+  
+  #resultadosBusqueda { /* Styles for search results container */
+    margin-top: 10px; /* Adjust margin as needed */
+    padding: 10px; /* Padding for results */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .resultado { /* Styles for individual search results */
+    list-style: none; /* Remove default list style */
+    padding: 5px 0; /* Padding for each result */
+    border-bottom: 1px solid #eee; /* Light gray border between results */
+  }
+  
+  .resultado a { /* Styles for links in search results */
+    color: #555; /* Darker gray for links */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .resultado a:hover { /* Styles for links on hover */
+    color: #000; /* Black for links on hover */
+  }
