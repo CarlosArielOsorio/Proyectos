@@ -34,6 +34,12 @@ body {
     color: #F68176; /* color de texto del menú */
 }
 
+.menu a {
+    margin-right: 2rem;
+    cursor: pointer;
+    color: #F68176; /* color de texto del menú */
+}
+
 .content {
     margin-top: 2rem;
 }
