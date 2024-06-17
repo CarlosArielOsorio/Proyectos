@@ -60,3 +60,19 @@ button:hover {
     list-style-type: none;
     padding: 0;
 }
+#buscador {
+    margin-bottom: 20px; /* Espacio debajo del buscador */
+  }
+  
+  #barraBusqueda {
+    width: 60%; /* Ajustar ancho del buscador */
+    margin: 10px auto; /* Centrar el buscador */
+  }
+  
+  #resultadosBusqueda {
+    margin-top: 10px; /* Espacio encima de los resultados */
+  }
+  
+  .producto__descripcion {
+    margin-top: 5px; /* Espacio entre nombre y descripción */
+  }
