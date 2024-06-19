@@ -102,9 +102,9 @@ function actualizarCarrito() {
 function buscarProductos() {
   const terminoBusqueda = document.getElementById('barraBusqueda').value.toLowerCase();
   const productos = [
-    { nombre: "Producto 1", descripcion: "Descripción del producto 1" },
-    { nombre: "Producto 2", descripcion: "Descripción del producto 2" },
-    { nombre: "Producto 3", descripcion: "Descripción del producto 3" },
+    { nombre: "Tarjeta Madre", descripcion: "Descripción del producto 1" },
+    { nombre: "Procesador", descripcion: "Descripción del producto 2" },
+    { nombre: "Pantalla", descripcion: "Descripción del producto 3" },
     // Agregar más productos aquí
   ];
 
