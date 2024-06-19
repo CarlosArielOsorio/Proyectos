@@ -98,3 +98,43 @@ function actualizarCarrito() {
     // Actualizar el total
     totalCarrito.textContent = total;
 }
+
+function buscarProductos() {
+  const terminoBusqueda = document.getElementById('barraBusqueda').value.toLowerCase();
+  const productos = [
+    { nombre: "Producto 1", descripcion: "Descripción del producto 1" },
+    { nombre: "Producto 2", descripcion: "Descripción del producto 2" },
+    { nombre: "Producto 3", descripcion: "Descripción del producto 3" },
+    // Agregar más productos aquí
+  ];
+
+  const resultadosBusqueda = document.getElementById('resultadosBusqueda');
+  resultadosBusqueda.innerHTML = ''; // Limpiar resultados anteriores
+
+  const productosFiltrados = productos.filter(producto =>
+    producto.nombre.toLowerCase().includes(terminoBusqueda) ||
+    producto.descripcion.toLowerCase().includes(terminoBusqueda)
+  );
+
+  if (productosFiltrados.length === 0) {
+    resultadosBusqueda.innerHTML = '<p>No se encontraron productos.</p>';
+  } else {
+    productosFiltrados.forEach(producto => {
+      const resultado = document.createElement('div');
+      resultado.classList.add('producto');
+
+      const nombreProducto = document.createElement('h3');
+      nombreProducto.classList.add('producto__nombre');
+      nombreProducto.textContent = producto.nombre;
+
+      const descripcionProducto = document.createElement('p');
+      descripcionProducto.classList.add('producto__descripcion');
+      descripcionProducto.textContent = producto.descripcion;
+
+      resultado.appendChild(nombreProducto);
+      resultado.appendChild(descripcionProducto);
+
+      resultadosBusqueda.appendChild(resultado);
+    });
+  }
+}
