@@ -349,3 +349,6 @@ input, textarea {
   .resultado a:hover { /* Styles for links on hover */
     color: #ffffff; /* Black for links on hover */
   }
+  .subtitus{
+    color: #ffffff;
+  }
