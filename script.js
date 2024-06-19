@@ -102,9 +102,9 @@ function actualizarCarrito() {
 function buscarProductos() {
   const terminoBusqueda = document.getElementById('barraBusqueda').value.toLowerCase();
   const productos = [
-    { nombre: "Tarjeta Madre", descripcion: "Descripción del producto 1" },
-    { nombre: "Procesador", descripcion: "Descripción del producto 2" },
-    { nombre: "Pantalla", descripcion: "Descripción del producto 3" },
+    { nombre: "Tarjeta Madre", descripcion: "Tarjeta madre para procesador 7" },
+    { nombre: "Procesador", descripcion: "Procesador ryzen 7" },
+    { nombre: "Pantalla", descripcion: "pantalla de 8 pulgadas hd" },
     // Agregar más productos aquí
   ];
 
