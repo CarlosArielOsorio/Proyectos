@@ -310,7 +310,7 @@ input, textarea {
   
   #barraBusqueda {
     background-color: #F68176; /* Light orange for search bar */
-    color: #000; /* Black text */
+    color: #ffffff; /* Black text */
     border: none; /* Remove default border */
     padding: 10px; /* Padding for search input */
     border-radius: 5px; /* Rounded corners */
@@ -347,5 +347,5 @@ input, textarea {
   }
   
   .resultado a:hover { /* Styles for links on hover */
-    color: #000; /* Black for links on hover */
+    color: #ffffff; /* Black for links on hover */
   }

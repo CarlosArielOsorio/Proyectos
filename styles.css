@@ -101,10 +101,10 @@ body {
   
   #barraBusqueda {
     background-color: #F68176; /* Light Orange */
-    color: #000; /* Black */
+    color: #ffffff; /* Black */
   }
   
   #resultadosBusqueda {
     background-color: #808dae; /* Light Purple */
-    color: #000; /* Black */
+    color: #ffffff; /* Black */
   }
