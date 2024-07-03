@@ -70,6 +70,9 @@ return document.getElementById(id).value;
 let carrito = [];
 let total = 0;
 
+let carrito = [];
+let total = 0;
+
 function agregarAlCarrito(nombre, precio) {
     // Añadir el producto al carrito
     carrito.push({ nombre, precio });
@@ -100,41 +103,41 @@ function actualizarCarrito() {
 }
 
 function buscarProductos() {
-  const terminoBusqueda = document.getElementById('barraBusqueda').value.toLowerCase();
-  const productos = [
-    { nombre: "Tarjeta Madre", descripcion: "Tarjeta madre para procesador 7" },
-    { nombre: "Procesador", descripcion: "Procesador ryzen 7" },
-    { nombre: "Pantalla", descripcion: "pantalla de 8 pulgadas hd" },
-    // Agregar más productos aquí
-  ];
+    const terminoBusqueda = document.getElementById('barraBusqueda').value.toLowerCase();
+    const productos = [
+        { nombre: "Tarjeta Madre", descripcion: "Tarjeta madre para procesador 7" },
+        { nombre: "Procesador", descripcion: "Procesador ryzen 7" },
+        { nombre: "Pantalla", descripcion: "pantalla de 8 pulgadas hd" },
+        // Agregar más productos aquí
+    ];
 
-  const resultadosBusqueda = document.getElementById('resultadosBusqueda');
-  resultadosBusqueda.innerHTML = ''; // Limpiar resultados anteriores
+    const resultadosBusqueda = document.getElementById('resultadosBusqueda');
+    resultadosBusqueda.innerHTML = ''; // Limpiar resultados anteriores
 
-  const productosFiltrados = productos.filter(producto =>
-    producto.nombre.toLowerCase().includes(terminoBusqueda) ||
-    producto.descripcion.toLowerCase().includes(terminoBusqueda)
-  );
+    const productosFiltrados = productos.filter(producto =>
+        producto.nombre.toLowerCase().includes(terminoBusqueda) ||
+        producto.descripcion.toLowerCase().includes(terminoBusqueda)
+    );
 
-  if (productosFiltrados.length === 0) {
-    resultadosBusqueda.innerHTML = '<p>No se encontraron productos.</p>';
-  } else {
-    productosFiltrados.forEach(producto => {
-      const resultado = document.createElement('div');
-      resultado.classList.add('producto');
+    if (productosFiltrados.length === 0) {
+        resultadosBusqueda.innerHTML = '<p>No se encontraron productos.</p>';
+    } else {
+        productosFiltrados.forEach(producto => {
+            const resultado = document.createElement('div');
+            resultado.classList.add('producto');
 
-      const nombreProducto = document.createElement('h3');
-      nombreProducto.classList.add('producto__nombre');
-      nombreProducto.textContent = producto.nombre;
+            const nombreProducto = document.createElement('h3');
+            nombreProducto.classList.add('producto__nombre');
+            nombreProducto.textContent = producto.nombre;
 
-      const descripcionProducto = document.createElement('p');
-      descripcionProducto.classList.add('producto__descripcion');
-      descripcionProducto.textContent = producto.descripcion;
+            const descripcionProducto = document.createElement('p');
+            descripcionProducto.classList.add('producto__descripcion');
+            descripcionProducto.textContent = producto.descripcion;
 
-      resultado.appendChild(nombreProducto);
-      resultado.appendChild(descripcionProducto);
+            resultado.appendChild(nombreProducto);
+            resultado.appendChild(descripcionProducto);
 
-      resultadosBusqueda.appendChild(resultado);
-    });
-  }
+            resultadosBusqueda.appendChild(resultado);
+        });
+    }
 }
