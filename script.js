@@ -66,36 +66,24 @@ newContacForm.set({
 const getElementVal = (id) => {
 return document.getElementById(id).value;
 };
-
 let carrito = [];
 let total = 0;
 
 function agregarAlCarrito(nombre, precio) {
-    // Añadir el producto al carrito
     carrito.push({ nombre, precio });
-    
-    // Sumar el precio al total
     total += precio;
-    
-    // Actualizar la visualización del carrito
     actualizarCarrito();
 }
 
 function actualizarCarrito() {
     const listaCarrito = document.getElementById('listaCarrito');
     const totalCarrito = document.getElementById('totalCarrito');
-    
-    // Limpiar la lista actual del carrito
     listaCarrito.innerHTML = '';
-    
-    // Recorrer el carrito y mostrar cada producto
     carrito.forEach(item => {
         const li = document.createElement('li');
         li.textContent = `${item.nombre} - $${item.precio}`;
         listaCarrito.appendChild(li);
     });
-    
-    // Actualizar el total
     totalCarrito.textContent = total;
 }
 
@@ -104,12 +92,12 @@ function buscarProductos() {
     const productos = [
         { nombre: "Tarjeta Madre", descripcion: "Tarjeta madre para procesador 7" },
         { nombre: "Procesador", descripcion: "Procesador ryzen 7" },
-        { nombre: "Pantalla", descripcion: "pantalla de 8 pulgadas hd" },
+        { nombre: "Pantalla", descripcion: "Pantalla de 8 pulgadas HD" },
         // Agregar más productos aquí
     ];
 
     const resultadosBusqueda = document.getElementById('resultadosBusqueda');
-    resultadosBusqueda.innerHTML = ''; // Limpiar resultados anteriores
+    resultadosBusqueda.innerHTML = '';
 
     const productosFiltrados = productos.filter(producto =>
         producto.nombre.toLowerCase().includes(terminoBusqueda) ||
@@ -131,8 +119,13 @@ function buscarProductos() {
             descripcionProducto.classList.add('producto__descripcion');
             descripcionProducto.textContent = producto.descripcion;
 
+            const botonAgregar = document.createElement('button');
+            botonAgregar.textContent = 'Agregar al Carrito';
+            botonAgregar.onclick = () => agregarAlCarrito(producto.nombre, 100); // Ajusta el precio según sea necesario
+
             resultado.appendChild(nombreProducto);
             resultado.appendChild(descripcionProducto);
+            resultado.appendChild(botonAgregar);
 
             resultadosBusqueda.appendChild(resultado);
         });
