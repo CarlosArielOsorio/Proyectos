@@ -70,9 +70,6 @@ return document.getElementById(id).value;
 let carrito = [];
 let total = 0;
 
-let carrito = [];
-let total = 0;
-
 function agregarAlCarrito(nombre, precio) {
     // Añadir el producto al carrito
     carrito.push({ nombre, precio });
