@@ -53,7 +53,7 @@ function buscarProductos() {
 
             const botonAgregar = document.createElement('button');
             botonAgregar.textContent = 'Agregar al Carrito';
-            botonAgregar.onclick = () => agregarAlCarrito(producto.nombre, 1000); // Ajusta el precio según sea necesario
+            botonAgregar.onclick = () => agregarAlCarrito(producto.nombre, 100); // Ajusta el precio según sea necesario
 
             resultado.appendChild(nombreProducto);
             resultado.appendChild(descripcionProducto);
